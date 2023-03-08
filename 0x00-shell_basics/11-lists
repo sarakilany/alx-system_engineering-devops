@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -la . ../ /boot | sed -e 's/[[:space:]]*$//'
+ls -la . .. /boot | sed -e 's/[[:space:]]*$//'
