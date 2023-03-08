@@ -1,0 +1,8 @@
+#!/bin/bash
+103-commas,, file0.c,, file1.c,
+(31 chars long)
+
+[Expected]
+./, ../, 103-commas, file0.c, file1.c
+
+(38 chars long)

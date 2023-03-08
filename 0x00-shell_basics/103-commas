@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1A | sort -df | awk '{printf "%s%s", NR == 1 ? "" : ", ", substr($0, length($0), 1) == "/" ? $0 : $0","}'
+ls -1d ./* .././* | sort -d | sed 's/^.*\///' | sed 's/$/,/' | tr -d '\n'
